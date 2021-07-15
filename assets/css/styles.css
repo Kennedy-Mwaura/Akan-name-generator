@@ -1,0 +1,26 @@
+html,
+body,
+header,
+.intro-2 {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+
+  html,
+  body,
+  header,
+  .intro-2 {
+    height: 900px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+
+  html,
+  body,
+  header,
+  .intro-2 {
+    height: 980px;
+  }
+}
