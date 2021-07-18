@@ -4,11 +4,17 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
     forMonth = document.getElementById("month-Select").value;
     formGender = document.querySelector('input[name=groupOfMaterialRadios]:checked').value;
     console.log(formDate, formYear, forMonth, formGender);
+    
+    let akaName = () => {
+        let birthYear = parseInt(formYear);
+        let birthMonth = parseInt(formDate);
+        console.log(birthYear, birthMonth)
+    
+        let day = birthYear
+    
+    }
+    akaName()
 
 }
 
 
-let akaName = (birthYear, birthDate, birthMonth, gender) => {
-    let day = birthYear
-
-}

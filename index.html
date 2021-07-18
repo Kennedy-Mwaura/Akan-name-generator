@@ -176,79 +176,90 @@
                         <!--Form without header-->
                         <div class="card card-image"
                         style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/pricing-table7.jpg'); width: 28rem;">
-                        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4 ">
-                    
-                            <!--Header-->
-                            <div class="text-center">
-                            <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>AKAN</strong> <a
-                                class="green-text font-weight-bold"><strong> NAME</strong></a></h3>
-                            </div>
-                    
-                            <!--Body-->
-                            <div class="md-form">
-                                <label for="input" class="white-text font-weight-bold">Enter year of birth</label>
-                                <input type="text" id="form-Year" class="form-control" placeholder="">
-                            </div>
-                            <div class="md-form">
-
-                                <label for="Form-date" class="green-text font-weight-bold">Enter Your birthdate </label>
-                                <input type="text" id="form-Date" class="form-control white-text">
-                            </div>
-                            
-                            <div class="md-form">
-                                <select class="mdb-select md-form mb-4 initialized" id="month-Select">
-                                    <option value="" disabled selected>Choose your birth month </option>
-                                    <option value="1">January</option>
-                                    <option value="2">february</option>
-                                    <option value="3">March </option>
-                                    <option value="4"> April</option>
-                                    <option value="5">May</option>
-                                    <option value="6"> June</option>
-                                    <option value="7">July</option>
-                                    <option value="8">August</option>
-                                    <option value="9">September</option>
-                                    <option value="10"> October </option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
-
-                                </select>
-                            </div>
-                            <!-- Gender select radios - option 1 -->
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="materialGroupExample1" name="groupOfMaterialRadios" value="male">
-                                <label class="form-check-label" for="materialGroupExample1">Male</label>
-                            </div>
-                            
-                            <!-- Gender select radios - option 2 -->
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="materialGroupExample2" name="groupOfMaterialRadios" value="female">
-                                <label class="form-check-label" for="materialGroupExample2">Female</label>
-                            </div>
-                            
-
-                    
-                            
-                            <div class="form-check my-4 ">
-                                <input class="form-check-input " type="checkbox" value="" id="defaultCheck17">
-                                <label class="form-check-label white-text" for="defaultCheck17">Confirm the <a href="#"
-                                    class="green-text font-weight-bold"> data is correct</a></label>
-                            </div>
+                            <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4 ">
                         
-                    
-                            <!--Grid row-->
-                            <div class="row d-flex align-items-center mb-4 flex-center">
-                    
-                            <!--Grid column-->
-                            <div class="text-center mb-3 col-md-6 ">
-                                <button type="button"  onclick="getInputValues()" class="btn btn-success btn-block btn-rounded z-depth-1">Submit</button>
+                                <!--Header-->
+                                <div class="text-center">
+                                    <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>AKAN</strong> <a
+                                        class="green-text font-weight-bold"><strong> NAME</strong></a></h3>
+                                </div>
+                                <form action="" class="was-validated">
+                                    <!--Body-->
+                                    <div class="md-form">
+                                        <label for="input" class="green-text font-weight-bold">Enter Year of birth</label>
+                                        <input type="text" id="form-Year" class="form-control white-text" placeholder="" required="required">
+                                        <div class="invalid-feedback">
+                                            Please enter a year.
+                                        </div> 
+                                    </div>
+                                    <div class="md-form">
+
+                                        <label for="Form-date" class="green-text font-weight-bold">Enter Your birthdate </label>
+                                        <input type="text" id="form-Date" class="form-control white-text" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a year.
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="md-form">
+                                        <select class="mdb-select md-form mb-4 initialized" id="month-Select" required>
+                                            <option value="" disabled selected>Choose your birth month </option>
+                                            <option value="1">January</option>
+                                            <option value="2">february</option>
+                                            <option value="3">March </option>
+                                            <option value="4"> April</option>
+                                            <option value="5">May</option>
+                                            <option value="6"> June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10"> October </option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+
+                                        </select>
+                                    </div>
+                                    <!-- Gender select radios - option 1 -->
+                                    <div class="form-check">
+                                        <input type="radio" class=" custom-control-imput form-check-input" id="materialGroupExample1" name="groupOfMaterialRadios" value="male" required>
+                                        <label class="form-check-label" for="materialGroupExample1">Male</label>
+        
+                                    </div>
+                                    
+                                    <!-- Gender select radios - option 2 -->
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="materialGroupExample2" name="groupOfMaterialRadios" value="female" required>
+                                        <label class="form-check-label" for="materialGroupExample2">Female</label>
+                                        <div class="invalid-feedback">Kindly select an option</div>
+                                    </div>
+        
+                                    <br>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input form-check-input" id="defaultCheck17" required>
+                                        <label class="custom-control-label white-text" for="defaultCheck17">Confirm the <a href="#"
+                                            class="green-text font-weight-bold"> data is correct</a></label>
+                                        <div class="invalid-feedback">Kindly confirm before submitting</div>
+                                      </div>
+                                
+                            
+                                    <!--Grid row-->
+                                    <div class="row d-flex align-items-center mb-4 flex-center">
+                            
+                                        <!--Grid column-->
+                                        <div class="text-center mb-3 col-md-6 ">
+                                            <button type="submit"  onclick="getInputValues()" class="btn btn-success btn-block btn-rounded z-depth-1">Submit</button>
+                                        </div>
+                                        <div class="text-center mb-3 col-md-6 ">
+                                            <button type="reset" class="btn btn-danger btn-block btn-rounded z-depth-1">Reset</button>
+                                        </div>
+                                    <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+                                </form>
+                        
                             </div>
-                            <!--Grid column-->
-                            </div>
-                            <!--Grid row-->
+                        </div>
                     
-                        </div>
-                        </div>
-                        <!--/Form without header-->
                     
                     </section>
                     <!--Section: Live preview-->
