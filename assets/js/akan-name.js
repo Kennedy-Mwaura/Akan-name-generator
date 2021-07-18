@@ -99,7 +99,7 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
 
     
         console.log(nickName);
-        personName.innerHTML = nickName;
+        personName.innerHTML = "This is your Akan name: " + nickName;
     
     }
     akaName()
