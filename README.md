@@ -8,7 +8,7 @@ This project is a a web application that takes a user's birthday and calculates 
 
 ## Brief Description of the project
 
-This is a web project t0o get user details and calculate their Akan name. 
+This is a web project t0o get user details and calculate their Akan name.
 
 ## Installation and Setup
 
