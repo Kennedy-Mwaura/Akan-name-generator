@@ -6,6 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -55,8 +57,8 @@
         <!--Intro Section-->
     <section class="view intro-2 aqua-gradient">
         <div class="mask">
-          <div class="container h-100 d-flex justify-content-center align-items-center">
-            <div class="row flex-center pt-5 mt-3">
+          <div class="container h-50 d-flex justify-content-center align-items-center">
+            <div class="row flex-center pt-5 mb-4 mt-5">
               <div class="col-md-12 col-lg-6 text-center text-md-left margins">
                 <div class="white-text">
                   <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">find your AKan name with our web app.</h1>
@@ -183,11 +185,11 @@
                                     <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>AKAN</strong> <a
                                         class="green-text font-weight-bold"><strong> NAME</strong></a></h3>
                                 </div>
-                                <form action="" class="was-validated">
+                                <form action="" class="was-validated" onsubmit="return false">
                                     <!--Body-->
                                     <div class="md-form">
                                         <label for="input" class="green-text font-weight-bold">Enter Year of birth</label>
-                                        <input type="text" id="form-Year" class="form-control white-text" placeholder="" required="required">
+                                        <input type="number" id="form-Year" class="form-control white-text" placeholder="" required minlength="4" maxlength="4" required="required">
                                         <div class="invalid-feedback">
                                             Please enter a year.
                                         </div> 
@@ -195,9 +197,9 @@
                                     <div class="md-form">
 
                                         <label for="Form-date" class="green-text font-weight-bold">Enter Your birthdate </label>
-                                        <input type="text" id="form-Date" class="form-control white-text" required>
+                                        <input type="number" id="form-Date" class="form-control white-text" min="1" max="31" required maxlength="2" required>
                                         <div class="invalid-feedback">
-                                            Please enter a year.
+                                            Please enter a valid date.
                                         </div> 
                                     </div>
                                     
@@ -240,6 +242,7 @@
                                             class="green-text font-weight-bold"> data is correct</a></label>
                                         <div class="invalid-feedback">Kindly confirm before submitting</div>
                                       </div>
+                                      <a class="btn btn-warning" onclick="toastr.warning('Hi! I am warning message.');">Warning message</a>
                                 
                             
                                     <!--Grid row-->
@@ -642,6 +645,8 @@
 
     <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
