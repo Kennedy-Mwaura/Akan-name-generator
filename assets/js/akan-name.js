@@ -23,6 +23,7 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
     formYear = document.getElementById("form-Year").value;
     forMonth = document.getElementById("month-Select").value;
     formGender = document.querySelector('input[name=groupOfMaterialRadios]:checked').value;
+    personName = document.getElementById("akaName");
     console.log(formDate, formYear, forMonth, formGender);
     let dataCheck = () => {
         let birthYear = parseInt(formYear);
@@ -98,6 +99,7 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
 
     
         console.log(nickName);
+        personName.innerHTML = nickName;
     
     }
     akaName()

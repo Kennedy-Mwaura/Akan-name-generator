@@ -242,7 +242,6 @@
                                             class="green-text font-weight-bold"> data is correct</a></label>
                                         <div class="invalid-feedback">Kindly confirm before submitting</div>
                                       </div>
-                                      <a class="btn btn-warning" onclick="toastr.warning('Hi! I am warning message.');">Warning message</a>
                                 
                             
                                     <!--Grid row-->
@@ -256,6 +255,40 @@
                                             <button type="reset" class="btn btn-danger btn-block btn-rounded z-depth-1">Reset</button>
                                         </div>
                                     <!--Grid column-->
+                                    </div>
+                                    <div class=" row d-flex align-items-center mb-4 flex-center">
+                                        
+                                        <!-- Button trigger modal-->
+                                        <button type="button" class="btn btn-primary btn-rounded purple-gradient" data-toggle="modal" data-target="#modalAkaName">Get Akan name</button>
+
+                                        <!--Modal: modalConfirmDelete-->
+                                        <div class="modal fade" id="modalAkaName" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog  modal-notify modal-success" role="document">
+                                            <!--Content-->
+                                            <div class="modal-content text-center">
+                                            <!--Header-->
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <p class="heading">You are Akan name is </p>
+                                                </div>
+
+                                                <!--Body-->
+                                                <div class="modal-body">
+
+                                                    <i class="fa fa-user fa-4x animated rotateIn"></i>
+                                                    <br/>
+                                                    <div>
+                                                        <p class="green white-text" id="akaName"></p>     
+                                                    </div>
+
+                                                </div>
+        
+                                            </div>
+                                            <!--/.Content-->
+                                        </div>
+                                        </div>
+                                        <!--Modal: modalConfirmDelete--> 
+                                       
                                     </div>
                                     <!--Grid row-->
                                 </form>
@@ -279,7 +312,7 @@
 
     <!--/Fourth container-->
     <div class="container">
-  
+
         <hr>
   
         <!--Section: Testimonials v.4-->
