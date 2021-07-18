@@ -78,7 +78,24 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
                 nickName = "Kwame"
             }
 
+        }else if (formGender == "female") {
+            if (day == "Sunday") {
+                nickName = "Akosua";
+            }else if (day == "Monday") {
+                nickName = "Adwoa";
+            } else if (day == "Tuesday") {
+                nickName = "Abenaa";
+            } else if (day == "Wednesday") {
+                nickName = "Akua";
+            } else if (day == "Thursday") {
+                nickName = "Yaa";
+            } else if (day == "Friday") {
+                nickName = "Afua";
+            } else if (day == "Saturday") {
+                nickName = "Ama";
+            }
         }
+
     
         console.log(nickName);
     
