@@ -13,14 +13,16 @@ This is a  web application that takes a user's birthday and calculates the day o
 ## Installation and Setup
 
   1. git clone this repository and run it via your preferred browser. Edit using your preferred editor. I recommend [VSCode](https://code.visualstudio.com/)
+
    OR
-   Download as a zip file, unpack and run in the browser.
+
+   2. Download as a zip file, unpack and run in the browser.
 
 * No external dependencies required.
 
 ## Known Bugs
 
-* Attach a backend to the contact form
+* Attach a backend to the form.
   
 ## Link to live site
 
