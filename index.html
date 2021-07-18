@@ -187,10 +187,10 @@
                             <!--Body-->
                             <div class="md-form">
                                 <label for="input" class="white-text font-weight-bold">Enter year of birth</label>
-                                <input type="text" id="input" class="form-control" placeholder="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                <input type="text" id="form-Year" class="form-control" placeholder="">
                             </div>
                             <div class="md-form">
-                                <input type="text" id="Form-date" class="form-control white-text">
+                                <input type="text" id="Form-Date" class="form-control white-text">
                                 <label for="Form-date" class="green-text font-weight-bold">Enter Your birthdate </label>
                             </div>
                             
@@ -200,6 +200,11 @@
                                     <option value="1">January</option>
                                     <option value="2">february</option>
                                     <option value="3">March </option>
+                                    <option value="4"> April</option>
+                                    <option value="5">May</option>
+                                    <option value="6"> June</option>
+                                    <option value="7">July</option>
+
                                 </select>
                             </div>
                             <!-- Gender select radios - option 1 -->
@@ -229,7 +234,7 @@
                     
                             <!--Grid column-->
                             <div class="text-center mb-3 col-md-6 ">
-                                <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Submit</button>
+                                <button type="button"  onclick="getInputValues()" class="btn btn-success btn-block btn-rounded z-depth-1">Submit</button>
                             </div>
                             <!--Grid column-->
                             </div>
