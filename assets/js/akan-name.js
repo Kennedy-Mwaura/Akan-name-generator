@@ -58,10 +58,8 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
         console.log(birthMonth)
         birthMonth -= 1; 
         d = new Date(birthYear, birthMonth, dd);
-        console.log(d);
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         day = days[d.getDay()];
-        console.log(day);
 
         console.log(day); 
         if (formGender == "male" ){
