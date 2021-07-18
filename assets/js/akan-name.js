@@ -1,7 +1,9 @@
-let getInputValues = ()=>{
-    formDate = document.getElementById("form-Date");
-    formYear = document.getElementById("form-Year");
-    console.log(formDate, formYear);
+let getInputValues = (formDate, formYear, forMonth, formGender) =>{
+    formDate = document.getElementById("form-Date").value;
+    formYear = document.getElementById("form-Year").value;
+    forMonth = document.getElementById("month-Select").value;
+    formGender = document.querySelector('input[name=groupOfMaterialRadios]:checked').value;
+    console.log(formDate, formYear, forMonth, formGender);
 
 }
 
