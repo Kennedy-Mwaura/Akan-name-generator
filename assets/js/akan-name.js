@@ -42,8 +42,6 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
             alert("Please enter a valid date")
         }
 
-        console.log(typeof(birthYear))
-
 
     }
     let akaName = () => {
@@ -57,6 +55,8 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
         let nickName = String;
 
         // day = (((cc/4) - 2*cc-1)+ 1 ((5*yy/4)) + ((26*(birthMonth+1)/10))+ dd) % 7;
+        console.log(birthMonth)
+        birthMonth -= 1; 
         d = new Date(birthYear, birthMonth, dd);
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         day = days[d.getDay()];
