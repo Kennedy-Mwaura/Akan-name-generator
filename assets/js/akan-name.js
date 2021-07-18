@@ -31,13 +31,24 @@ let getInputValues = (formDate, formYear, forMonth, formGender) =>{
         if (birthYear ==null || birthYear ==""){
             alert("Please enter a valid birth year")
             return false;
+        }else if (birthYear.toString().length<4 || birthYear > 2021) {
+            alert("Please enter a valid year")
+            return false;
         }
+        if (birthDate ==null || birthDate ==""){
+            alert("Please enter a valid birth year")
+            return false;
+        } else if (birthDate.toString().length > 2 || birthdate > 31) {
+            alert("Please enter a valid date")
+        }
+
+        console.log(typeof(birthYear))
+
 
     }
     dataCheck()
     let akaName = () => {
        
-        //console.log(birthYear, birthMonth)
     
         // let day = birthYear
     
